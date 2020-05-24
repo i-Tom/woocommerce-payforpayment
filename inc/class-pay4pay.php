@@ -153,7 +153,7 @@ jQuery(document).ready(function($){
 					$chosen_methods[]=null;
 				}
 
-				if ( ( ! $disable_on_free_shipping || ! preg_grep( '/^free_shipping.*/', $chosen_methods ) ) && ( ! $disable_on_zero_shipping || $cart->shipping_total > 0 ) ) {
+				if ( ( $this->cart_contents_total ) && ( ! $disable_on_free_shipping || ! preg_grep( '/^free_shipping.*/', $chosen_methods ) ) && ( ! $disable_on_zero_shipping || $cart->shipping_total > 0 ) ) {
 					$cost = floatval( apply_filters( 'woocommerce_pay4pay_charges_fixed', $settings['pay4pay_charges_fixed'], $current_gateway ) );
 
 					//  √ $this->cart_contents_total + √ $this->tax_total + √ $this->shipping_tax_total + $this->shipping_total + $this->fee_total,
