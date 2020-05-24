@@ -15,7 +15,6 @@ Previous versions have been created by [Jörn Lund](https://github.com/mcguffin)
 
 Unreleased updates
 ------------------
-- Slovak translation (thanks to [Roman Velocký](https://gandalf.sk/))
 
 Plugin API
 ----------
